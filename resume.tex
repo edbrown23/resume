@@ -1,0 +1,94 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document}
+
+\name{Eric David Brown}
+% \address used twice to have two lines of address
+\address{197 Summer St, Apt 2, Somerville MA, 02143}
+\address{(563) 581-8229}
+
+    \begin{resume}
+        \section{Work Experience}
+            {\sl Software Engineer, Streamer Team Lead} \hfill June 2013 - Present \\ % Team Lead?
+            Aereo Inc, Boston, MA
+                \begin{itemize} \itemsep -2pt % reduce space between items
+                    \item Led team of four to maintain and add features to the \\
+                          Aereo custom Streamer, written in C++ and Python, which \\
+                          served all video streams to clients on multiple platforms
+                    \item Dictated release schedules and features for the Aereo \\
+                          Streamer team, while carrying out packaging and releasing \\
+                          of the Streamer software to the release team
+                    \item Improved streaming performance for HLS-based clients by implementing \\
+                          an O(log n) video binary search algorithm in C++ that supplanted \\
+                          an O(n) linear search. Further increased performance by moving \\
+                          to an O(1) time stamp data structure with file system caching of indices
+                \end{itemize}
+
+            {\sl Software Development Intern} \hfill Summer 2012 \\
+            Innovative Software Engineering, Iowa City, IA
+                \begin{itemize} \itemsep -2pt % reduce space between items
+                    \item Developed Extensive Web Browser Automation Suite in Java \\
+                          and Selenium for use by the Validation Department, with \\
+                          rigorous logging and automated email messages, which \\
+                          reduced manual testing time and dramatically increased \\
+                          overall test coverage
+                    \item Implemented rapid development tools for QA staff who lacked \\ 
+                          programming experience 
+                \end{itemize}
+
+            % {\sl Student Staff Member} \hfill May 2011 - May 2013
+            % The National Advanced Driving Simulator, Iowa City, IA
+            %     \begin{itemize} \itemsep -2pt % reduce space between items
+            %         \item Wrote Visual Basic .NET programs to efficiently interpret \\
+            %               vehicle data from multiple asynchronous sources numbering \\
+            %               in the millions of lines, while presenting this data on a \\
+            %               synchronized video stream
+            %         \item Designed and built a small, accurate, and easily \\
+            %               modifiable driving simulator
+            %         \item Created an embedded microcontroller and transceiver \\
+            %               device with C capable of listening to a vehicle’s data \\
+            %               bus and controlling select subsystems
+            %     \end{itemize}
+
+		\section{Education}
+            {\sl Bachelor of Science in Engineering} \hfill Graduated May 2013 \\
+                % \sl will be bold italic in New Century Schoolbook (or
+                % any postscript font) and just slanted in
+                % Computer Modern (default) font
+                The University of Iowa, Iowa City, IA \\
+                % This should be bolded somehow
+                Major: Computer Engineering; Minor: Computer Science \\ 
+                GPA: 3.7/4.0    
+            
+    \section{Programming \\ Experience}
+        {\sl Languages and software}
+            \begin{itemize} \itemsep -2pt
+                \item Extensive Experience in C and C++, including Boost and the STL
+                \item Proficient in Python, Javascript, and Go
+                \item Highly skilled in Git and its workflows, including versioning for \\
+                      software releases
+                \item At home in Linux, especially RedHat distros, and Mac OSX
+            \end{itemize}
+        {\sl Development Interests}
+            \begin{itemize} \itemsep -2pt
+                \item Low-level optimization, exploration, and understanding
+                \item Simulation, Artificial Intelligence, and Pathfinding
+            \end{itemize}
+         
+    \section{Personal Project Experience}
+        \begin{itemize} \itemsep -2pt
+            \item Public Github repositories located at https://github.com/edbrown23 
+            \item Currently developing a multiplayer strategy game with server \\
+                  components written in Go and client side rendering and interfaces \\
+                  and interfaces in Javascript, including A* Pathfinding and sprite animation
+            \item Created a 3 dimensional world simulation with fluid and erosion mechanics \\
+                  in a procedurally generated infinite landscape using Perlin Noise, \\
+                  implemented in Java
+        \end{itemize}
+            
+    {\sl References available upon request}
+    \end{resume}
+\end{document}
